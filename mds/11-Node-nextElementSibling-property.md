@@ -2,7 +2,7 @@
 
 - `nextElementSibling` property gives us the next sibling element as it is clear but not node...
 
-```javascript
+```html
 // ...
 <body>
   <h2 id="title">Element: nextElementSibling property - JavaScript DOM</h2>
@@ -26,8 +26,7 @@
 
 - Simple exercise for `nextElementSibling`:
 
-```javascript
-
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -101,6 +100,4 @@
     </script>
   </body>
 </html>
-
-
 ```

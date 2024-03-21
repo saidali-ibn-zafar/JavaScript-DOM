@@ -2,7 +2,7 @@
 
 - In the codes below, we have input and it has "sample" as a value. And then using setAttribute() we are changing it into "modified sample"
 
-```javascript
+```html
 // ...
 <body>
     <input type="text" id="myInput" value="sample"></input>
@@ -19,18 +19,14 @@
 
 - We have learned `document.createElement`, so we will try to use it in the below example:
 
-```javascript
+```html
 // ...
-<body>
-
-</body>
+<body></body>
 
 <script type="text/javascript">
+  const myElement = document.createElement("div");
 
-    const myElement = document.createElement("div");
-
-    myElement.setAttribute("class", "container")
-
+  myElement.setAttribute("class", "container");
 </script>
 ```
 

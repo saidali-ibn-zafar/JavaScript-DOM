@@ -2,59 +2,49 @@
 
 - In this time we are working on `appendChild()` and there we had `ul` with a list item of APPLE. After that we are creating an element with using `createElement()` property. Finally we are appending as child of `myList`...
 
-```javascript
+```html
 // ...
 <body>
-
-   <ul id="myList">
-        <li>Apple</li>
-   </ul>
-
+  <ul id="myList">
+    <li>Apple</li>
+  </ul>
 </body>
 
 <script type="text/javascript">
+  // Parent Element:
+  const myList = document.getElementById("myList");
 
-    // Parent Element:
-    const myList = document.getElementById("myList");
+  // New List Item
+  const newListItem = document.createElement("li");
 
-    // New List Item
-    const newListItem = document.createElement("li");
+  newListItem.textContent = "Banana";
 
-    newListItem.textContent = "Banana";
-
-    myList.appendChild(newListItem);
-
+  myList.appendChild(newListItem);
 </script>
-
 ```
 
 ---
 
 - Creating and appending element with using `for of` loop:
 
-```javascript
+```html
 // ...
 <body>
-
-   <ul id="myList">
-        <li>Apple</li>
-   </ul>
-
+  <ul id="myList">
+    <li>Apple</li>
+  </ul>
 </body>
 
 <script type="text/javascript">
+  // Parent Element:
+  const myList = document.getElementById("myList");
+  const fruitList = ["Orange", "Banana", "Mango", "Lemon"];
 
-    // Parent Element:
-    const myList = document.getElementById("myList");
-    const fruitList = ["Orange", "Banana", "Mango", "Lemon"];
+  for (const fruit of fruitList) {
+    let newListItem = document.createElement("li");
+    newListItem.textContent = fruit;
 
-    for (const fruit of fruitList) {
-        let newListItem = document.createElement("li");
-        newListItem.textContent = fruit;
-
-        myList.appendChild(newListItem);
-    }
+    myList.appendChild(newListItem);
+  }
 </script>
-
-
 ```

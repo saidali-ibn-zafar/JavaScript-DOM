@@ -6,7 +6,7 @@
 
   - e.g: `bananasItem.cloneNode(true)` - in that case, it copies deeply, which means with children. So we would have `<li>Bananas</li>`.
 
-```javascript
+```html
 // ...
 <body>
   <h2 id="title">Node.cloneNode() - JavaScript DOM</h2>
@@ -17,9 +17,11 @@
   </ul>
 
   <script type="text/javascript">
-    const myList = document.getElementById("myList"); const listChildren =
-    myList.children; const bananasItem = listChildren[1]; const bananasCopy =
-    bananasItem.cloneNode(true); myList.appendChild(bananasCopy);
+    const myList = document.getElementById("myList");
+    const listChildren = myList.children;
+    const bananasItem = listChildren[1];
+    const bananasCopy = bananasItem.cloneNode(true);
+    myList.appendChild(bananasCopy);
   </script>
 </body>
 ```
